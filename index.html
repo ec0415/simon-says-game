@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simon Game</title>
+
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div>
+		<h3 class="score">Score: <span id="score"></span></h3>
+	</div>
+	<div>
+		<div onclick="panelClicked(event.currentTarget)" class="panel top-left-panel"></div>
+		<div onclick="panelClicked(event.currentTarget)" class="panel top-right-panel"></div>
+	</div>
+	<div>
+		<div onclick="panelClicked(event.currentTarget)" class="panel bottom-left-panel"></div>
+		<div onclick="panelClicked(event.currentTarget)" class="panel bottom-right-panel"></div>
+	</div>
+	<div class="center-logo">
+		<h2 class="message"><span id="message"></span></h2>
+	</div>
+
+<script src="index.js"></script>
+</body>
+</html>
